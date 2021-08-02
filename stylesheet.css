@@ -19,3 +19,20 @@ h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: underline gold;
 }
+
+.other-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.other-work img {
+  width: 50%;
+  padding-top: 4em;
+}
+
+.other-work h2 {
+  margin-top: 1em;
+  margin-bottom: 0ß;
+}
