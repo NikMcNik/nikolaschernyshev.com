@@ -19,6 +19,7 @@ h2 {
   font-size: 70px;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: underline gold;
+  text-align: center;
 }
 
 .other-work {
@@ -39,7 +40,7 @@ h2 {
 }
 
 .most-recent-artwork {
-  width: 50%;
+  width: 75%;
   padding-top: 4em;
   height: auto;
 }
