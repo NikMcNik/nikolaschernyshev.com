@@ -9,6 +9,7 @@ body {
 
 .banner {
   width: 100%;
+  height: auto;
 }
 
 h2 {
@@ -35,4 +36,10 @@ h2 {
 .other-work h2 {
   margin-top: 1em;
   margin-bottom: 0ß;
+}
+
+.most-recent-artwork {
+  width: 50%;
+  padding-top: 4em;
+  height: auto;
 }
