@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: rgb(38, 37, 37);
@@ -23,7 +27,12 @@ body {
 .social-media img {
   width: 150px;
   height: auto;
-  margin: 1em;
+  margin: 30px;
+}
+.social-media img:hover {
+  filter: brightness(150%);
+  width: 170px;
+  margin: 20px;
 }
 
 h2 {
