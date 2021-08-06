@@ -12,6 +12,19 @@ body {
   height: auto;
 }
 
+.social-media {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media img {
+  width: 150px;
+  height: auto;
+  margin: 1em;
+}
+
 h2 {
   color: gold;
   -webkit-text-stroke: black;
