@@ -28,6 +28,7 @@ body {
   width: 150px;
   height: auto;
   margin: 30px;
+  transition-duration: 0.2s;
 }
 .social-media img:hover {
   filter: brightness(150%);
