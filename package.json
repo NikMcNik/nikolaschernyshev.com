@@ -1,0 +1,23 @@
+{
+  "name": "nikolaschernyshev.com",
+  "version": "1.0.0",
+  "description": "Nikolas Chernyshev's website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikMcNik/nikolaschernyshev.com.git"
+  },
+  "keywords": [],
+  "author": "Nikolas Chernyshev",
+  "bugs": {
+    "url": "https://github.com/NikMcNik/nikolaschernyshev.com/issues"
+  },
+  "homepage": "https://github.com/NikMcNik/nikolaschernyshev.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
