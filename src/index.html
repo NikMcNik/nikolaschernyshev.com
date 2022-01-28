@@ -10,33 +10,33 @@ title: Nikolas Chernyshev
     alt="Nikolas Chernyshev"
     width="1920"
     height="1080"
-  />
+/>
 </header>
 <h2>Social Media links</h2>
 <div class="social-media">
   <a href="https://www.instagram.com/ra_ra_ruski/">
-    <img src="/siteimages/icons/instagramIcon.png" />
+    <img src="/siteimages/icons/instagramIcon.png"/>
   </a>
   <a href="https://www.youtube.com/channel/UCV4P2DSBTM6zoiNb6Pi27xw">
-    <img src="/siteimages/icons/yt_icon_rgb.png" />
+    <img src="/siteimages/icons/yt_icon_rgb.png"/>
   </a>
   <a href="https://www.twitch.tv/nikolaschernyshev">
-    <img src="/siteimages/icons/TwitchGlitchPurple.png" />
+    <img src="/siteimages/icons/TwitchGlitchPurple.png"/>
   </a>
   <a href="https://twitter.com/Nik_McNik">
-    <img src="/siteimages/icons/Twitter_Logo_Blue.png" />
+    <img src="/siteimages/icons/Twitter_Logo_Blue.png"/>
   </a>
   <a href="https://www.facebook.com/profile.php?id=100065104999416">
-    <img src="/siteimages/icons/facebookicon.png" />
+    <img src="/siteimages/icons/facebookicon.png"/>
   </a>
   <a href="https://www.pinterest.com/nchernyshev/_saved/">
-    <img src="/siteimages/icons/pintrest_icon-288px.png" />
+    <img src="/siteimages/icons/pintrest_icon-288px.png"/>
   </a>
   <a href="https://www.linkedin.com/in/nikolas-chernyshev-872673219/">
-    <img src="/siteimages/icons/LinkedIn_logo_initials.png" />
+    <img src="/siteimages/icons/LinkedIn_logo_initials.png"/>
   </a>
   <a href="https://github.com/NikMcNik">
-    <img src="/siteimages/icons/octocat.png" />
+    <img src="/siteimages/icons/octocat.png"/>
   </a>
 </div>
 
@@ -47,106 +47,19 @@ title: Nikolas Chernyshev
     alt="knight kneeling in front of a fense blocking fog monster"
     width="750"
     height="938"
-  />
+/>
 
-  <h2>Previous artworks</h2>
-  <img
-    src="/artworks/portal_doors_fixed.jpg"
-    alt="Poortal doors"
-    width="2100"
-    height="1500"
-  />
-  <img
-    src="/artworks/spider_forest.jpg"
-    alt="spider forest"
-    width="1708"
-    height="1080"
-  />
-  <img
-    src="/artworks/benny_production_july_challange.jpg"
-    alt="Fantasy medivl scene"
-    width="1366"
-    height="768"
-  />
-  <img
-    src="/artworks/topOfTheMorningCofee.jpg"
-    alt="top of the morning coffee fantasy scene "
-    width="1920"
-    height="1080"
-  />
-  <img
-    src="/artworks/spiider_cave.jpg"
-    alt="spider cave"
-    width="1378"
-    height="1509"
-  />
-  <img
-    src="/artworks/Chernyshev_J22WordArt-01.jpg"
-    alt="Iroh quote"
-    width="505"
-    height="505"
-  />
-  <img
-    src="/artworks/mansion_party.jpg"
-    alt="NSP Mansion Party Album Cover"
-    width="1378"
-    height="1509"
-  />
-  <img
-    src="/artworks/blossom_tree.jpg"
-    alt="Blossom tree near lake at night with moon"
-    width="1920"
-    height="900"
-  />
-  <img
-    src="/artworks/CrystalMonserRedSeajpg.jpg"
-    alt="crystal floating on island with creppy creature in the red water "
-    width="1920"
-    height="1080"
-  />
-  <img
-    src="/artworks/morgorat_cropped.jpg"
-    alt="hybrid monster"
-    width="1085"
-    height="1500"
-  />
-  <img
-    src="/artworks/sir_syzygy_cropped.jpg"
-    alt="Gentelman in suit with wings"
-    width="1080"
-    height="1920"
-  />
-  <img
-    src="/artworks/fiery_hesfer.jpg"
-    alt="fire monster"
-    width="1116"
-    height="1368"
-  />
-  <img
-    src="/artworks/moon_kitty_and_sun_kitty.jpg"
-    alt="sun and moon with kittens on them"
-    width="1080"
-    height="1920"
-  />
+  {% for page in collections.art %}
+    <h2>
+      <a href="{{ page.url }}">{{ page.data.title }}</a>
+    </h2>
+    <a href="{{ page.url }}"><img
+    src="{{page.data.src}}"
+    alt="{{page.data.alt}}"
+    width="{{page.data.width}}"
+    height="{{page.data.height}}"/>
+    </a>
 
-  <h2>Favorite Photography</h2>
-  <img
-    src="/artworks/mount_photo.jpg"
-    alt="mountiain qith 4 people"
-    width="1920"
-    height="1080"
-  />
+  {% endfor %}
 
-  <img
-    src="/artworks/bridge_image.jpg"
-    alt="person and bridge"
-    width="1920"
-    height="1080"
-  />
-  <img
-    src="/artworks/Red_Sunset.JPG"
-    alt="Red sunset"
-    width="6000"
-    height="4000"
-  />
 </div>

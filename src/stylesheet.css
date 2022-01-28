@@ -35,7 +35,8 @@ body {
   width: 170px;
   margin: 20px;
 }
-h2 {
+h2,
+h2 a {
   color: gold;
   -webkit-text-stroke: black;
   -webkit-text-stroke-width: 2px;
@@ -44,6 +45,10 @@ h2 {
   text-decoration: underline gold;
   text-align: center;
 }
+h2 a:hover {
+  color: rgb(176, 150, 3);
+  text-decoration: underline rgb(176, 150, 3);
+}
 
 .work {
   display: flex;
@@ -51,6 +56,7 @@ h2 {
   align-items: center;
   justify-content: space-evenly;
   padding-bottom: 4em;
+  width: 100%;
 }
 
 .work img {
@@ -58,8 +64,35 @@ h2 {
   padding-top: 4em;
   height: auto;
 }
+.work a {
+  width: 50%;
+}
+.work a img {
+  width: 100%;
+}
+.work a:hover {
+  width: 55%;
+}
 
 .work h2 {
   margin-top: 1em;
-  margin-bottom: 0ß;
+  margin-bottom: 0;
+}
+
+nav {
+  background: linear-gradient(90deg, #5c05d2, #5c05d2, #0b4cf5);
+  width: 100%;
+  text-align: left;
+  font-size: 3em;
+  padding: 2.2em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: gold;
 }
