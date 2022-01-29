@@ -48,6 +48,7 @@ h2 a {
 h2 a:hover {
   color: rgb(176, 150, 3);
   text-decoration: underline rgb(176, 150, 3);
+  transition-duration: 0.2s;
 }
 
 .work {
@@ -72,6 +73,7 @@ h2 a:hover {
 }
 .work a:hover {
   width: 55%;
+  transition-duration: 0.3s;
 }
 
 .work h2 {
@@ -95,4 +97,5 @@ nav a {
 }
 nav a:hover {
   color: gold;
+  transition-duration: 0.2s;
 }
