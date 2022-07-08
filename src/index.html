@@ -10,56 +10,57 @@ title: Nikolas Chernyshev
     alt="Nikolas Chernyshev"
     width="1920"
     height="1080"
-/>
+  />
 </header>
 <h2>Social Media links</h2>
 <div class="social-media">
   <a href="https://www.instagram.com/ra_ra_ruski/">
-    <img src="/siteimages/icons/instagramIcon.png"/>
+    <img src="/siteimages/icons/instagramIcon.png" />
   </a>
   <a href="https://www.youtube.com/channel/UCV4P2DSBTM6zoiNb6Pi27xw">
-    <img src="/siteimages/icons/yt_icon_rgb.png"/>
+    <img src="/siteimages/icons/yt_icon_rgb.png" />
   </a>
   <a href="https://www.twitch.tv/nikolaschernyshev">
-    <img src="/siteimages/icons/TwitchGlitchPurple.png"/>
+    <img src="/siteimages/icons/TwitchGlitchPurple.png" />
   </a>
   <a href="https://twitter.com/Nik_McNik">
-    <img src="/siteimages/icons/Twitter_Logo_Blue.png"/>
+    <img src="/siteimages/icons/Twitter_Logo_Blue.png" />
   </a>
   <a href="https://www.facebook.com/profile.php?id=100065104999416">
-    <img src="/siteimages/icons/facebookicon.png"/>
+    <img src="/siteimages/icons/facebookicon.png" />
   </a>
   <a href="https://www.pinterest.com/nchernyshev/_saved/">
-    <img src="/siteimages/icons/pintrest_icon-288px.png"/>
+    <img src="/siteimages/icons/pintrest_icon-288px.png" />
   </a>
   <a href="https://www.linkedin.com/in/nikolas-chernyshev-872673219/">
-    <img src="/siteimages/icons/LinkedIn_logo_initials.png"/>
+    <img src="/siteimages/icons/LinkedIn_logo_initials.png" />
   </a>
   <a href="https://github.com/NikMcNik">
-    <img src="/siteimages/icons/octocat.png"/>
+    <img src="/siteimages/icons/octocat.png" />
   </a>
 </div>
 
 <div class="work">
   <h2>Most recent artwork</h2>
   <img
-    src="/artworks/snow_knight_scene.jpg"
-    alt="knight kneeling in front of a fense blocking fog monster"
+    src="/artworks/gnomeForestPlaymat.jpg"
+    alt="forest with vilage of gnomes and mushroom houses"
     width="750"
     height="938"
-/>
+  />
 
   {% for page in collections.art %}
-    <h2>
-      <a href="{{ page.url }}">{{ page.data.title }}</a>
-    </h2>
-    <a href="{{ page.url }}"><img
-    src="{{page.data.src}}"
-    alt="{{page.data.alt}}"
-    width="{{page.data.width}}"
-    height="{{page.data.height}}"/>
-    </a>
+  <h2>
+    <a href="{{ page.url }}">{{ page.data.title }}</a>
+  </h2>
+  <a href="{{ page.url }}"
+    ><img
+      src="{{page.data.src}}"
+      alt="{{page.data.alt}}"
+      width="{{page.data.width}}"
+      height="{{page.data.height}}"
+    />
+  </a>
 
   {% endfor %}
-
 </div>
