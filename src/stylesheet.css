@@ -60,19 +60,10 @@ h2 a:hover {
 }
 
 .work img {
-  width: 50%;
+  width: 95%;
+  max-width: 50em;
   padding-top: 4em;
   height: auto;
-}
-.work a {
-  width: 50%;
-}
-.work a img {
-  width: 100%;
-}
-.work a:hover {
-  width: 55%;
-  transition-duration: 0.3s;
 }
 
 .work h2 {
@@ -135,5 +126,6 @@ nav a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: top;
+  justify-content: space-evenly;
   gap: 1em;
 }
