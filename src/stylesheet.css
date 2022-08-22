@@ -38,8 +38,7 @@ body {
 h2,
 h2 a {
   color: gold;
-  -webkit-text-stroke: black;
-  -webkit-text-stroke-width: 2px;
+
   font-size: 70px;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: underline gold;
@@ -98,4 +97,43 @@ nav a {
 nav a:hover {
   color: gold;
   transition-duration: 0.2s;
+}
+
+.artdoor h2, .artdoor h2 a{
+
+  font-size: 1.25em;
+}
+
+.artdoor{
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4em;
+  width: 17em;
+}
+
+ .artdoor a img {
+  width: 100%;
+  height: auto;
+}
+.artdoor a{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+ .artdoor a img:hover{
+  filter: brightness(60%);
+  transition-duration: 0.3s;
+}
+
+
+.artnav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: top;
+  gap: 1em;
 }

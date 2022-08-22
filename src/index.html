@@ -48,19 +48,22 @@ title: Nikolas Chernyshev
     width="750"
     height="938"
   />
-
-  {% for page in collections.art %}
-  <h2>
-    <a href="{{ page.url }}">{{ page.data.title }}</a>
-  </h2>
-  <a href="{{ page.url }}"
-    ><img
-      src="{{page.data.src}}"
-      alt="{{page.data.alt}}"
-      width="{{page.data.width}}"
-      height="{{page.data.height}}"
-    />
-  </a>
-
-  {% endfor %}
 </div>
+
+<section class="artnav">
+  {% for page in collections.art %}
+  <div class="artdoor">
+    <h2>
+      <a href="{{ page.url }}">{{ page.data.title }}</a>
+    </h2>
+    <a href="{{ page.url }}"
+      ><img
+        src="{{page.data.src}}"
+        alt="{{page.data.alt}}"
+        width="{{page.data.width}}"
+        height="{{page.data.height}}"
+      />
+    </a>
+  </div>
+  {% endfor %}
+</section>
