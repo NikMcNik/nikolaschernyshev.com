@@ -2,8 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const imageExtensions = /\.(jpg|jpeg|png|gif|webp|svg)$/i;
-// Assumes the 'artworks' directory is in the project root.
-const artworksDir = path.join(process.cwd(), "artworks");
+// Assumes the 'artworks' directory is in the 'src' directory.
+const artworksDir = path.join(process.cwd(), "src", "artworks");
 
 module.exports = () => {
   if (!fs.existsSync(artworksDir)) {
