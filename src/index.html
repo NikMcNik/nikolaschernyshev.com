@@ -128,6 +128,8 @@ title: Nikolas Chernyshev
     const nextBtn = carousel.querySelector(".carousel-control.next");
     let currentIndex = 0;
     const totalItems = items.length;
+    let autoPlayInterval;
+
     if (totalItems <= 1) {
       if (prevBtn) prevBtn.style.display = "none";
       if (nextBtn) nextBtn.style.display = "none";
@@ -136,14 +138,40 @@ title: Nikolas Chernyshev
     function updateCarousel() {
       inner.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    prevBtn.addEventListener("click", () => {
-      currentIndex = currentIndex > 0 ? currentIndex - 1 : totalItems - 1;
-      updateCarousel();
-    });
-    nextBtn.addEventListener("click", () => {
+
+    function nextSlide() {
       currentIndex = currentIndex < totalItems - 1 ? currentIndex + 1 : 0;
       updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = currentIndex > 0 ? currentIndex - 1 : totalItems - 1;
+      updateCarousel();
+    }
+
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
+
+    prevBtn.addEventListener("click", () => {
+      stopAutoPlay();
+      prevSlide();
+      startAutoPlay();
     });
+    nextBtn.addEventListener("click", () => {
+      stopAutoPlay();
+      nextSlide();
+      startAutoPlay();
+    });
+
+    carousel.addEventListener("mouseenter", stopAutoPlay);
+    carousel.addEventListener("mouseleave", startAutoPlay);
+
+    startAutoPlay();
   });
 </script>
 
